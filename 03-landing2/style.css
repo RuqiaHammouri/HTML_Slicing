@@ -1,0 +1,111 @@
+body {
+  background-image: url("./landing02.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family:  'Hubballi', cursive;
+  
+}
+.container1 {
+  width: 100%;
+}
+.header {
+ background-color: #f6f6f6;
+}
+.header .container {
+    width: 100%;
+    padding: 0;
+    margin:0;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.container h2 {
+    font-weight: 400;
+}
+.header .links {
+  position: relative;
+}
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.5s;
+}
+.header .links .icon span:last-child {
+  width: 100%;
+}
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+.header .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .links:hover ul {
+  display: block;
+}
+.header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.5s;
+}
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+.child1 {
+  width: 30%;
+  margin: 10% auto;
+  align-items: center;
+  text-align: center;
+}
+.child1 h1 {
+  font-weight: 900;
+}
+.child1 h4 {
+  font-weight: 500;
+}
+.child1 button {
+  border: 3px solid black;
+  width: 40%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.child1 button:hover {
+  color: aliceblue;
+  background-color: black;
+}
