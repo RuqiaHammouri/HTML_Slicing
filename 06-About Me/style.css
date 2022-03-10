@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.titleHeader {
+  text-align: center;
+  margin: 40px auto;
+  border-bottom: 10px solid purple;
+  width: 200px;
+}
+.aboutImage {
+  width: 110%;
+  height: 600px;
+  border-radius: 15px;
+}
+.aboutMePerantDiv {
+  width: 80%;
+  display: flex;
+  gap: 5%;
+  margin: 50px auto;
+}
+.welcoming {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+p {
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.aboutButton {
+  width: 20%;
+  height: 50px;
+  font-size: 18;
+  background-color: purple;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
