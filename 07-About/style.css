@@ -1,0 +1,57 @@
+body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .special-heading {
+    color: #EBECED;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+  }
+  .about .about-content {
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+  }
+  .about .about-content .abo {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .about .about-content .abo i {
+    color: #10CAB7;
+    flex-basis: 60px;
+  }
+  .about .about-content .srv .text {
+    flex: 1;
+  }
+  .about .about-content .abo .text p {
+    color: rgb(8, 8, 8);
+    font-weight: 300;
+    line-height: 2.4;
+  }
+  .about .about-content .image {
+    text-align: center;
+    position: relative;
+  }
+  .about .about-content .image::before {
+    content: "";
+    background-color: #273F2E;
+    width: 100px;
+    height: 480px;
+    top: -30px;
+    position: absolute;
+    left: 0;
+    /* z-index: -1; */
+  }
+  .about .about-content .image img {
+    width: 310px;
+  }
