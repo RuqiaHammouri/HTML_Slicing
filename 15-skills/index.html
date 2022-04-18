@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills page </title>
+</head>
+<style>
+    body { background : black;
+    display : flex  }
+    body{
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #F3B0FF;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+.bar.front::before{
+  background-color: #FF5C33;
+}
+.bar.back::before{
+  background-color: #A6CFE3;
+}
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+    .cont1 {color : white }
+    .container {color : white }
+</style>
+<body>
+    <div class="cont1">
+        <h1>Skills And Experiance </h1>
+<p>lorem Ipsum Lorem Ipsum Lore wgdvwh  uWQH UD qwedhjvH DWEfb j  uGHKEJFN wwhdkjnm QWWDB kqwdeb</p>
+</p>
+    </div>
+        <div class="container">
+            <h1>My Skills </h1>
+            <div class="bar learning" data-skill="css"></div>
+            <div class="bar back basic" data-skill="Java script "></div>
+            <div class="bar back intermediate" data-skill="php"></div>
+            <div class="bar front advanced" data-skill="CSS3"></div>
+            <div class="bar front expert" data-skill="HTML5"></div>
+          </div>
+</body>
+</html>
